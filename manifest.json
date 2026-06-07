@@ -23,8 +23,6 @@
         "github-chat.js"
       ],
       "css": [
-        "story-list.css",
-        "story-view.css",
         "github-chat.css"
       ]
     }
