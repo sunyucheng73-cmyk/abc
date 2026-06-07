@@ -1,0 +1,33 @@
+{
+  "name": "GitHub Stories",
+  "version": "0.1",
+  "description": "Stories and chat on GitHub",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "github-chat.js"
+      ],
+      "css": [
+        "story-list.css",
+        "story-view.css",
+        "github-chat.css"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
